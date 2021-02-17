@@ -1,4 +1,4 @@
-Don't use this.
+Don't use this. The code is cobbled together from openzfs/zfs, so I guess it is licensed compatibly.
 
 ```
 [nix-shell:~/zfsev]$ sudo ./result/bin/zfsev
