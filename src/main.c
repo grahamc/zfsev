@@ -27,6 +27,7 @@ int handle_event(libzfs_handle_t *h, int zevent_fd) {
   printf("\n");
   fflush(stdout);
 
+  nvlist_free(nvl);
   return 0;
 }
 

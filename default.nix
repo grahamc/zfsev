@@ -4,7 +4,7 @@ in
 pkgs.stdenv.mkDerivation {
   pname = "zfsev";
   version = "0.0.0";
-  nativeBuildInputs = with pkgs; [ pkgconfig cmake ];
+  nativeBuildInputs = with pkgs; [ pkgconfig cmake valgrind ];
   buildInputs = with pkgs; [ zfs utillinux zlib openssl ];
   src = ./src;
 }
