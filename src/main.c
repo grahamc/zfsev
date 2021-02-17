@@ -9,10 +9,6 @@ int handle_event(libzfs_handle_t *h, int zevent_fd) {
   nvlist_t *nvl;
   int n_dropped;
   int rv;
-  uint64_t eid;
-  int64_t *etime;
-  uint_t nelem;
-  char *class;
 
   rv = zpool_events_next(h, &nvl, &n_dropped,
                          0x0, // ZEVENT_NONE ... not a public const??
