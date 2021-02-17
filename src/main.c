@@ -40,8 +40,6 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
-  printf("init'd\n");
-
   int zevent_fd;
   zevent_fd = open(ZFS_DEV, O_RDWR);
   if (zevent_fd < 0) {
